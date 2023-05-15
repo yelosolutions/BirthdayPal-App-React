@@ -5,12 +5,14 @@ import { data } from './data'
 const List = () => {
     const [people, setPeople]  = useState(data);
 
+
     const clearList = () => {
-        return setPeople([]);
+        setPeople([]);
+        people.length = 0;
     };
 
     return <section className='container'>
-        <h3>{data.length} Birthdays Today</h3>
+        <h3>{people.length} Birthdays Today</h3>
         {people.map((person) => {
             return <Person key={person.id} {...person}></Person> 
         })}
