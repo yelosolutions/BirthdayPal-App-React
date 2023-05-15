@@ -2,4 +2,6 @@
 
 To demonstrate the use of useState hook I implemented a simple birthday reminder application.
 
-<img src='snap.png'/>
+## Screenshot
+
+<img src='./birthday-app/public/snap.png'/>
